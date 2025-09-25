@@ -52,15 +52,16 @@ app.get("/dashboard.html", (req, res) => {
   res.sendFile(path.join(__dirname, "../frontend/pages/dashboard.html"));
 });
 
-app.get("/dashboard.html", (req, res) => {
+app.get("/cart.html", (req, res) => {
   res.sendFile(path.join(__dirname, "../frontend/pages/cart.html"));
 
 });
 
-app.get("/dashboard.html", (req, res) => {
+app.get("/admin.html", (req, res) => {
   res.sendFile(path.join(__dirname, "../frontend/pages/admin.html"));
 });
-app.get("/dashboard.html", (req, res) => {
+
+app.get("/contact.html", (req, res) => {
   res.sendFile(path.join(__dirname, "../frontend/pages/contact.html"));
 });
 
