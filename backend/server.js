@@ -52,6 +52,18 @@ app.get("/dashboard.html", (req, res) => {
   res.sendFile(path.join(__dirname, "../frontend/pages/dashboard.html"));
 });
 
+app.get("/dashboard.html", (req, res) => {
+  res.sendFile(path.join(__dirname, "../frontend/pages/cart.html"));
+
+});
+
+app.get("/dashboard.html", (req, res) => {
+  res.sendFile(path.join(__dirname, "../frontend/pages/admin.html"));
+});
+app.get("/dashboard.html", (req, res) => {
+  res.sendFile(path.join(__dirname, "../frontend/pages/contact.html"));
+});
+
 // ✅ Start Server
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
