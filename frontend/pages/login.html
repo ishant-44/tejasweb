@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - SpeedoStar</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="bg-gray-900 text-white flex items-center justify-center min-h-screen">
+  <div class="bg-gray-800 p-8 rounded-2xl shadow-lg w-96">
+    <h2 class="text-2xl font-bold text-center mb-6">Login</h2>
+    <form onsubmit="login(event)" class="space-y-4">
+      <input type="email" id="email" placeholder="Email" class="w-full p-3 rounded-lg bg-gray-700 text-white outline-none">
+      <input type="password" id="password" placeholder="Password" class="w-full p-3 rounded-lg bg-gray-700 text-white outline-none">
+      <button type="submit" class="w-full bg-indigo-600 py-3 rounded-lg font-semibold hover:bg-indigo-500">Login</button>
+    </form>
+    <p class="text-gray-400 text-sm text-center mt-4">Don’t have an account? <a href="signup.html" class="text-yellow-400">Signup</a></p>
+  </div>
+  <script src="../js/script.js"></script>
+</body>
+</html>
