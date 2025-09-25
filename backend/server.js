@@ -36,9 +36,20 @@ app.use("/api/auth", authRoutes);
 app.use("/api/messages", messageRoutes);
 app.use("/api/cart", cartRoutes);
 
-// ✅ Catch-all: serve index.html for unknown routes
-app.get("*", (req, res) => {
+app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "../frontend/pages/index.html"));
+});
+
+app.get("/login.html", (req, res) => {
+  res.sendFile(path.join(__dirname, "../frontend/pages/login.html"));
+});
+
+app.get("/signup.html", (req, res) => {
+  res.sendFile(path.join(__dirname, "../frontend/pages/signup.html"));
+});
+
+app.get("/dashboard.html", (req, res) => {
+  res.sendFile(path.join(__dirname, "../frontend/pages/dashboard.html"));
 });
 
 // ✅ Start Server
